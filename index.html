@@ -1,324 +1,483 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
-    />
-    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>MT</title>
-  </head>
-  <body>
-    <!--Header-->
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img/favicon1.png" type="image/x-icon">
 
-    <header class="header" id="header">
-      <nav class="nav container">
-        <a href="" class="navL">
-          <img src="img/favicon.png" alt="favicon" class="navL-img" />
-          MT
+        <!--=============== REMIX ICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>Mendez Tech</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#home" class="nav__logo">
+                   Mendez<i class="ri-close-line nav__logo-icon"></i>Tech
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">Inicio</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">Nosotros</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#products" class="nav__link">Productos</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#faqs" class="nav__link">FAQs</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">Contáctanos</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div>
+                </div>
+
+                <div class="nav__btns">
+                    <!-- Theme change button -->
+                    <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-line"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home" id="home">
+                <div class="home__container container grid">
+                    <img src="assets/img/home.png" alt="" class="home__img">
+
+                    <div class="home__data">
+                        <h1 class="home__title">
+                            LA TECNOLOGIA HARA <br> TU NEGOCIO MEJOR
+                        </h1>
+                        <p class="home__description">
+                            Crea tu propia página web o aplicativo para que modernices tu negocio <br>
+                            Añade innovación a tus nuevas ideas.
+                        </p>
+                        <a href="#about" class="button button--flex">
+                            Explora <i class="ri-arrow-right-down-line button__icon"></i>
+                        </a>
+                    </div>
+
+                    <div class="home__social">
+                        <span class="home__social-follow">Síguenos</span>
+
+                        <div class="home__social-links">
+                            <a href="https://wa.link/v8khq8" target="_blank" class="home__social-link">
+                                <i class="ri-phone-line"></i>
+                            </a>
+                            <a href="https://instagram.com/mendez_tch?igshid=YmMyMTA2M2Y=" target="_blank" class="home__social-link">
+                                <i class="ri-instagram-line"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== ABOUT ====================-->
+            <section class="about section container" id="about">
+                <div class="about__container grid">
+                    <img src="assets/img/about.png" alt="" class="about__img">
+
+                    <div class="about__data">
+                        <h2 class="section__title about__title">
+                            Quienes somos & Por qué elegirnos
+                        </h2>
+
+                        <p class="about__description">
+                            Somos una empresa enfocada en diseñar páginas web y aplicativos para tu negocio.
+                            Con esto no solo puedes tener informes, sino que al mismo tiempo te permite presentar tus productos y que mas usuarios contacten contigo.
+                        </p>
+
+                        <div class="about__details">
+                            <p class="about__details-description">
+                                <i class="ri-checkbox-fill about__details-icon"></i>
+                                Siempre entregamos a tiempo los proyectos
+                            </p>
+                            <p class="about__details-description">
+                                <i class="ri-checkbox-fill about__details-icon"></i>
+                                Diseñamos el aplicativo considerando las ideas del cliente.
+                            </p>
+                            <p class="about__details-description">
+                                <i class="ri-checkbox-fill about__details-icon"></i>
+                                Seguimos con chequeos del programa, después de la venta.
+                            </p>
+                            <p class="about__details-description">
+                                <i class="ri-checkbox-fill about__details-icon"></i>
+                                Creamos proyectos económicos.
+                            </p>
+                        </div>
+
+                        <a href="#contact" class="button--link button--flex">
+                            Compra Ahora <i class="ri-arrow-right-down-line button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== STEPS ====================-->
+            <section class="steps section container">
+                <div class="steps__bg">
+                    <h2 class="section__title-center steps__title">
+                        Pasos para modernizar <br> con nosotros tu negocio
+                    </h2>
+
+                    <div class="steps__container grid">
+                        <div class="steps__card">
+                            <div class="steps__card-number">01</div>
+                            <h3 class="steps__card-title">Identifica el producto que quieres implementar.</h3>
+                            <p class="steps__card-description">
+                                Tenemos gran variedad de proyectos para que te guíes o elijas el que deseas.
+                            </p>
+                        </div>
+
+                        <div class="steps__card">
+                            <div class="steps__card-number">02</div>
+                            <h3 class="steps__card-title">Contáctanos</h3>
+                            <p class="steps__card-description">
+                                Dirígete al área de contacto y envía la información o escríbenos desde nuestras redes sociales.
+                            </p>
+                        </div>
+
+                        <div class="steps__card">
+                            <div class="steps__card-number">03</div>
+                            <h3 class="steps__card-title">Recibe tu proyecto</h3>
+                            <p class="steps__card-description">
+                                Nuestro proceso de entrega es fácil, nos comunicamos contigo, diseñamos el prototipo con las ideas propuestas y te entregamos el proyecto final.
+                            </p>
+                        </div>
+
+                        <div class="steps__card">
+                            <div class="steps__card-number">04</div>
+                            <h3 class="steps__card-title">Realiza el pago</h3>
+                            <p class="steps__card-description">
+                             Una vez esta el programa o pagina web, se define la suscripcion mensual, la cual deperas pagar periodicamente.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== PRODUCTS ====================-->
+            <section class="product section container" id="products">
+                <h2 class="section__title-center">
+                    Mira nuestros<br> productos
+                </h2>
+
+                <p class="product__description">
+                    Aquí hay algunos proyectos seleccionados de nuestra sala de exposición, para que veas en que consiste nuestros productos. Compra y disfruta de la mejor calidad, con los mejores precios.
+                </p>
+
+                <div class="product__container grid">
+                    <article class="product__card">
+
+                        <img src="assets/img/product1.png" alt="" class="product__img">
+
+                        <h3 class="product__title">Programa escritorio</h3>
+                        <span class="product__price">Guarda, edita y elimina la información de tu negocio</span>
+                        
+                        <a href="https://instagram.com/mendez_tch?igshid=YmMyMTA2M2Y=" class="button--link button--flex">
+                            Mas información <i class="ri-arrow-right-down-line button__icon"></i>
+                        </a>
+                    </article>
+
+                    <article class="product__card">
+
+                        <img src="assets/img/product2.png" alt="" class="product__img">
+
+                        <h3 class="product__title">Programa escritorio</h3>
+                        <span class="product__price">Almacena archivos de cualquier tipo en tu base de datos </span>
+
+                        <a href="https://instagram.com/mendez_tch?igshid=YmMyMTA2M2Y=" class="button--link button--flex">
+                            Mas información <i class="ri-arrow-right-down-line button__icon"></i>
+                        </a>
+                    </article>
+
+                    <article class="product__card">
+
+                        <img src="assets/img/product3.png" alt="" class="product__img">
+
+                        <h3 class="product__title">Programa escritorio</h3>
+                        <span class="product__price">Optimiza procesos de tu negocio con funciones del aplicativo y crea informes</span>
+
+                        <a href="https://instagram.com/mendez_tch?igshid=YmMyMTA2M2Y=" class="button--link button--flex">
+                            Mas información <i class="ri-arrow-right-down-line button__icon"></i>
+                        </a>
+                    </article>
+
+                    <article class="product__card">
+
+                        <img src="assets/img/product4.png" alt="" class="product__img">
+
+                        <h3 class="product__title">Página web</h3>
+                        <span class="product__price">Presenta tus productos y la información de tu negocio de forma online.</span>
+                        <a href="https://instagram.com/mendez_tch?igshid=YmMyMTA2M2Y=" class="button--link button--flex">
+                            Mas información <i class="ri-arrow-right-down-line button__icon"></i>
+                        </a>
+                    </article>
+
+                    <article class="product__card">
+
+                        <img src="assets/img/product5.png" alt="" class="product__img">
+
+                        <h3 class="product__title">Página web</h3>
+                        <span class="product__price">Recibe cotizaciones y pedidos de tus productos</span>
+                        <a href="https://instagram.com/mendez_tch?igshid=YmMyMTA2M2Y=" class="button--link button--flex">
+                            Mas información <i class="ri-arrow-right-down-line button__icon"></i>
+                        </a>
+                    </article>
+
+                    <article class="product__card">
+
+                        <img src="assets/img/product6.png" alt="" class="product__img">
+
+                        <h3 class="product__title">Página web</h3>
+                        <span class="product__price">Muestra la ubicación de tu negocio y presenta la página o menú con QR</span>
+
+                        <a href="https://instagram.com/mendez_tch?igshid=YmMyMTA2M2Y=" class="button--link button--flex">
+                            Mas información <i class="ri-arrow-right-down-line button__icon"></i>
+                        </a>
+                    </article>
+                </div>
+            </section>
+
+            <!--==================== QUESTIONS ====================-->
+            <section class="questions section" id="faqs">
+                <h2 class="section__title-center questions__title container">
+                    Preguntas Frecuentes
+                </h2>
+
+                <div class="questions__container container grid">
+                    <div class="questions__group">
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="ri-add-line questions__icon"></i>
+                                <h3 class="questions__item-title">
+                                    ¿Mi programa está molestando?
+                                </h3>
+                            </header>
+
+                            <div class="questions__content">
+                                <p class="questions__description">
+                                    Puedes escribirnos al área de soporte, en minutos nos comunicamos contigo y te ayudamos con el requerimiento.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="ri-add-line questions__icon"></i>
+                                <h3 class="questions__item-title">
+                                    ¿Es muy caro conseguir un programa?
+                                </h3>
+                            </header>
+
+                            <div class="questions__content">
+                                <p class="questions__description">
+                                    Los precios varían dependiendo de la cantidad de funciones que deseas.
+                                    Pero no te preocupes, los proyectos son economicos.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="ri-add-line questions__icon"></i>
+                                <h3 class="questions__item-title">
+                                    ¿Qué precios manejan?
+                                </h3>
+                            </header>
+
+                            <div class="questions__content">
+                                <p class="questions__description">
+                                    Los precios son variables dependiendo de la cantidad de parametros que deseas para el sistema.
+                                    Una vez se define el precio del proyecto, este será saldado, de forma mensual como una suscripción
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="questions__group">
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="ri-add-line questions__icon"></i>
+                                <h3 class="questions__item-title">
+                                    ¿Sí quiero actualizar mi programa, con información, fotos, etc. Tengo que pagar mas dinero?
+                                </h3>
+                            </header>
+
+                            <div class="questions__content">
+                                <p class="questions__description">
+                                   Los costos por actualizacion de informacion, son cubiertos en la suscripcion mensual que adquieres. 
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="ri-add-line questions__icon"></i>
+                                <h3 class="questions__item-title">
+                                    ¿Cuentan con promociones?
+                                </h3>
+                            </header>
+
+                            <div class="questions__content">
+                                <p class="questions__description">
+                                    Si compartes la empresa en tus redes sociales y traes conocidos para que adquieran programas para sus negocios o emprendimientos, Mendez Tech te regala 5% en tu suscripción mensual, por los primeros 3 meses. 
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="ri-add-line questions__icon"></i>
+                                <h3 class="questions__item-title">
+                                    ¿Quiero agregar mas funciones a mi programa o página web?
+                                </h3>
+                            </header>
+
+                            <div class="questions__content">
+                                <p class="questions__description">
+                                    Como las actualizaciones corresponden a un cambio del sistema, estas serán cargadas a la suscripción mensual. 
+                                    Es un pequeño cambio de tarifa, pero no radica de forma excesiva en el precio del proyecto.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== CONTACT ====================-->
+            <section class="contact section container" id="contact">                
+                <div class="contact__container grid">
+                    <div class="contact__box">
+                        <h2 class="section__title">
+                            COMUNICATE CON NOSOTROS 
+                        </h2>
+
+                        <div class="contact__data">
+                            <div class="contact__information">
+                                <h3 class="contact__subtitle">Soporte instantáneo</h3>
+                                <span class="contact__description">
+                                    <i class="ri-phone-line contact__icon"></i>
+                                    +302 459 0657
+                                </span>
+                            </div>
+
+                            <div class="contact__information">
+                                <h3 class="contact__subtitle">Correo</h3>
+                                <span class="contact__description">
+                                    <i class="ri-mail-line contact__icon"></i>
+                                    mendeztech22@gmail.com
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form action="https://formsubmit.co/mendeztech22@gmail.com" method="POST" class="contact__form">
+
+                        <div class="contact__inputs">
+                            <div class="contact__content">
+                                <input type="text" name="Nombre" placeholder=" " class="contact__input" required>
+                                <label class="contact__label">Nombre</label>
+                            </div>
+
+                            <div class="contact__content">
+                                <input type="email" name="email" placeholder=" " class="contact__input" required>
+                                <label class="contact__label">Email</label>
+                            </div>
+
+                            <div class="contact__content">
+                                <input type="number" name="telefono" placeholder=" " class="contact__input" required>
+                                <label  class="contact__label">Número de teléfono </label>
+                            </div>
+
+                            <div class="contact__content contact__area">
+                                <textarea name="message" placeholder=" " class="contact__input" required></textarea>                              
+                                <label class="contact__label">Descripción del proyecto que deseas</label>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="button button--flex">
+                            Envía
+                            <i class="ri-arrow-right-up-line button__icon"></i>
+                        </button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div class="footer__content">
+                    <a href="#home" class="footer__logo">
+                        Mendez<i class="ri-close-line nav__logo-icon"></i>Tech
+                    </a>
+
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Contáctanos</h3>
+
+                    <ul class="footer__data">
+                        <li class="footer__information">+302 459 0657</li>
+                        
+                        <div class="footer__social">
+                            <a href="https://wa.link/v8khq8" class="footer__social-link">
+                                <i class="ri-phone-line""></i>
+                            </a>
+                            <a href="https://instagram.com/mendez_tch?igshid=YmMyMTA2M2Y=" class="footer__social-link">
+                                <i class="ri-instagram-line"></i>
+                            </a>
+                        </div>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">
+                        Aceptamos todos los medios de pago
+                    </h3>
+
+                    <div class="footer__cards">
+                        <img src="assets/img/card1.png" alt="" class="footer__card">
+                        <img src="assets/img/card2.png" alt="" class="footer__card">
+                        <img src="assets/img/card3.png" alt="" class="footer__card">
+                        <img src="assets/img/card4.png" alt="" class="footer__card">
+                        <img src="assets/img/images.png" alt="" class="footer__card">
+                    </div>
+                </div>
+            </div>
+
+            <p class="footer__copy">&#169; Mendez Tech</p>
+        </footer>
+        
+        <!--=============== SCROLL UP ===============-->
+        <a href="#" class="scrollup" id="scroll-up"> 
+            <i class="ri-arrow-up-fill scrollup__icon"></i>
         </a>
 
-        <div class="navM" id="nav-menu">
-          <ul class="navList">
-            <li class="navItem">
-              <a href="#home" class="navLink active-link"> Inicio </a>
-            </li>
-            <li class="navItem">
-              <a href="#about" class="navLink"> Nosotros </a>
-            </li>
-            <li class="navItem">
-              <a href="#product" class="navLink"> Productos </a>
-            </li>
-            <li class="navItem">
-              <a href="#new" class="navLink"> Promociones </a>
-            </li>
-          </ul>
-
-          <div class="navclose" id="nav-close">
-            <i class="bx bx-x"></i>
-          </div>
-        </div>
-
-        <div class="navToggle" id="nav-toggle">
-          <i class="bx bx-grid-alt"></i>
-        </div>
-      </nav>
-    </header>
-
-    <main class="main">
-      <!--HOME-->
-      <section class="home container" id="home">
-        <div class="swiper home-swiper">
-          <div class="swiper-wrapper">
-            <section>
-              <div class="homecont grid">
-                <div class="homedata">
-                  <h1 class="hometitle">MENDEZ<br/>TECH</h1>
-                  <p class="homedes">
-                    Empresa de programación de software.<br/>Enfocada en modernizar, negocios, instituciones o emprendimientos con la implementación de <br/> aplicativos y páginas web.
-                  </p>
-                </div>
-
-                <div class="homegroup">
-                  <img src="img/SAP-DDM-II-1.png" alt="" class="homeimg" />
-                </div>
-              </div>
-            </section>
-          </div>
-        </div>
-      </section>
-
-      <!--CATEGORY-->
-      <section class="section category">
-        <h2 class="sectiontitle">
-          Las mejores <br />
-          Categorias
-        </h2>
-
-        <div class="categorycontainer container grid">
-          <div class="categorydata">
-            <img src="img/categoria1.png" alt="" />
-            <h3 class="categorytitle">Páginas Web</h3>
-            <p class="categorydescription">
-             Sitio online el cual busca informar, vender, generar presencia e interactuar con los clientes.  
-            </p>
-          </div>
-
-          <div class="categorydata">
-            <img src="img/categoria2.png" alt="" />
-            <h3 class="categorytitle">Programas para PC</h3>
-            <p class="categorydescription">
-              Aplicativos para escritorio, los cuales sirven para registrar ventas, realizar inventarios, gestionar procesos del personal, entre otras actividades.
-            </p>
-          </div>
-
-          <div class="categorydata">
-            <img src="img/categoria3.png" alt="" />
-            <h3 class="categorytitle">Aplicaciones para Celular</h3>
-            <p class="categorydescription">
-              Programas para dispositivos móviles, los cuales pueden ser de utilidad para presentar el menú de los productos, informar e interactuar con los clientes.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!--ABOUT-->
-      <section class="section about" id="about">
-        <div class="aboutcontainer container grid">
-          <img src="img/about-img.png" alt="" class="aboutimg" />
-          <div class="aboutdata">
-            <h2 class="sectiontitle abouttitle">Nosotros <br />Somos</h2>
-            <p class="aboutdescription">
-              Quienes innovaran tu negocio 
-            </p>
-            <a href="https://wa.link/um1x6g" class="button"> Escríbenos </a>
-          </div>
-        </div>
-      </section>
-
-      <!--PRODUCTS-->
-      <section class="section product" id="product">
-        <h2 class="sectiontitle">Productos</h2>
-
-        <div class="productcontainer container grid">
-          <div class="productcontent">
-            <img src="img/productos1.png" alt="" class="productimg" />
-            <h3 class="producttitle">Página Web Publicitaria </h3>
-            <span class="productsubtitle">Hoting + Dominio</span>
-            <span class="productprice">$204,46</span>
-
-          </div>
-          <div class="productcontent">
-            <img src="img/productos2.png" alt="" class="productimg" />
-            <h3 class="producttitle">Página Web Publicitaria</h3>
-            <span class="productsubtitle">Redes Sociales + Hosting + Dominio</span>
-            <span class="productprice">$522,51</span>
-          </div>
-          <div class="productcontent">
-            <img src="img/productos3.png" alt="" class="productimg" />
-            <h3 class="producttitle">Página Web con funciones integradas</h3>
-            <span class="productsubtitle">Dependiendo del número de funciones</span>
-            <span class="productprice">$795,12 a $4201,66</span>
-          </div>
-          <div class="productcontent">
-            <img src="img/productos4.png" alt="" class="productimg" />
-            <h3 class="producttitle">Programa para PC</h3>
-            <span class="productsubtitle">Sencillo / Funciones Básicas</span>
-            <span class="productprice">$79,52 a $140,86</span>
-          </div>
-          <div class="productcontent">
-            <img src="img/productos5.png" alt="" class="productimg" />
-            <h3 class="producttitle">Programa para PC</h3>
-            <span class="productsubtitle">Regular / Funciones Intermedias </span>
-            <span class="productprice">$143,13 a $222,65</span>
-          </div>
-          <div class="productcontent">
-            <img src="img/productos6.png" alt="" class="productimg" />
-            <h3 class="producttitle">Programa para PC</h3>
-            <span class="productsubtitle">Sotisficado / Funciones Avanzadas </span>
-            <span class="productprice">$227,19 a $1233,65</span>
-          </div>
-        </div>
-      </section>
-
-      <!--DESCUENTO-->
-      <section class="section discount">
-        <div class="discountcontainer container grid">
-          <div class="discountdata">
-            <h2 class="discounttitle">30% Descuento <br />Productos</h2>
-            <a href="https://wa.link/um1x6g" class="button">Vamos</a>
-          </div>
-          <img src="img/discount-img.png" alt="" class="discountimg" />
-        </div>
-      </section>
-
-      <!--LO NUEVO-->
-      <section class="section new" id="new">
-        <h2 class="sectiontitle">Promociones</h2>
-
-        <div class="newcontainer container">
-          <div class="swiper new-swiper">
-            <div class="swiper-wrapper">
-              <div class="newcontent swiper-slide">
-                <div class="newtag">Nuevo</div>
-                <img src="img/productos2.png" alt="" class="newimg" />
-                <h3 class="newtitle">Página Web Publicitaria</h3>
-                <span class="newsubtitle"> con Redes Sociales</span>
-                <div class="newprices">
-                  <span class="newprice">$440,26</span>
-                  <span class="newdiscount">$522,51</span>
-                </div>
-              </div>
-              <div class="newcontent swiper-slide">
-                <div class="newtag">Nuevo</div>
-                <img src="img/productos4.png" alt="" class="newimg" />
-                <h3 class="newtitle">Programa para PC</h3>
-                <span class="newsubtitle">Regular</span>
-                <div class="newprices">
-                  <span class="newprice">$170,44</span>
-                  <span class="newdiscount">$222,65</span>
-                </div>
-              </div>
-
-              <div class="newcontent swiper-slide">
-                <div class="newtag">Nuevo Producto</div>
-                <img src="img/categoria3.png" alt="" class="newimg" />
-                <h3 class="newtitle">Aplicación para Celular</h3>
-                <span class="newsubtitle">Publicitaria</span>
-                <div class="newprices">
-                  <span class="newprice">$145,70</span>
-                  <span class="newdiscount">$270,44</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!--CORREO-->
-
-      <section class="section newsletter">
-        <div class="newslc container">
-          <h2 class="sectiontitle">Contáctanos</h2>
-          <p class="newsld">!No esperes más y moderniza tu negocio!</p>
-          <form action="mailto:mendeztech22@gmail.com?subject=Aplicativo%20o%20P%C3%A1gina%20Web&body=Bienvenido%20a%20MT%0AEnvi%C3%B3%20el%20presente%20correo%20es%20para%2C%20solicitar%20m%C3%A1s%20informaci%C3%B3n%20sobre%20un%20Aplicativo%20o%20P%C3%A1gina%20web%20para%20mi%20negocio.%0A%0AMi%20negocio%20es%20de%3A%0A%0A%0A%0AGracias" class="newslf">
-            <input type="text" placeholder="Escribe tu correo" class="newslin" />
-            <button class="button2">Escríbenos</button>
-          </form>
-        </div>
-      </section>
-    </main>
-    <!--FOOTER-->
-    <footer class="footer section">
-      <div class="footercontainer container grid">
-        <div class="footercontent">
-          <a href="#" class="footerL">
-            <img src="img/favicon.png" alt="" class="footerL-img" />
-            MENDEZ TECHNOLOGY
-          </a>
-
-          <p class="footerdescription">
-            Se parte de la familia MT, <br /> 
-            No esperes más y moderniza tu negocio !
-          </p>
-
-          <div class="footersocial">
-            <a href="mailto:mendeztech22@gmail.com?subject=Aplicativo%20o%20P%C3%A1gina%20Web&body=Bienvenido%20a%20MT%0AEnvi%C3%B3%20el%20presente%20correo%20es%20para%2C%20solicitar%20m%C3%A1s%20informaci%C3%B3n%20sobre%20un%20Aplicativo%20o%20P%C3%A1gina%20web%20para%20mi%20negocio.%0A%0AMi%20negocio%20es%20de%3A%0A%0A%0A%0AGracias" target="_blank" class="footersocial-link">
-              <i class="bx bxl-gmail"></i>
-            </a>
-            <a href="https://instagram.com/mendez_tch?igshid=YmMyMTA2M2Y=" target="_blank" class="footersocial-link">
-              <i class="bx bxl-instagram-alt"></i>
-            </a>
-            <a href="https://wa.link/um1x6g" target="_blank" class="footersocial-link">
-              <i class="bx bxl-whatsapp"></i>
-            </a>
-          </div>
-        </div>
-
-        <div class="footercontent">
-          <h3 class="footertitle">Servicios Adicionales</h3>
-          <ul class="footerlinks">
-            <li>
-              <a href="#" class="footerlink">Mantenimiento 24 hr</a>
-            </li>
-            <li>
-              <a href="#" class="footerlink">Consultoría, para identificar que Aplicativo o Programa se acopla mejor a tu negocio</a>
-            </li>
-            <li>
-              <a href="#" class="footerlink">Comunicación constante, con nosotros</a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="footercontent">
-          <h3 class="footertitle">Nuestros videos informativos</h3>
-          <ul class="footerlinks">
-            <li>
-              <a href="https://vimeo.com/741720717" class="footerlink">Página Web</a>
-            </li>
-            <li>
-              <a href="https://vimeo.com/741720717" class="footerlink">Programas para PC</a>
-            </li>
-            <li>
-              <a href="https://vimeo.com/741720717" class="footerlink">Aplicativos para Celular</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footercontent">
-          <h3 class="footertitle"> Comunícate con nosotros</h3>
-          <ul class="footerlinks">
-            <li>
-              <a href="mailto:mendeztech22@gmail.com?subject=Aplicativo%20o%20P%C3%A1gina%20Web&body=Bienvenido%20a%20MT%0AEnvi%C3%B3%20el%20presente%20correo%20es%20para%2C%20solicitar%20m%C3%A1s%20informaci%C3%B3n%20sobre%20un%20Aplicativo%20o%20P%C3%A1gina%20web%20para%20mi%20negocio.%0A%0AMi%20negocio%20es%20de%3A%0A%0A%0A%0AGracias" target="_blank" class="footersocial-link" class="footerlink">Correo</a>
-            </li>
-            <li>
-              <a href="https://instagram.com/mendez_tch?igshid=YmMyMTA2M2Y=" class="footerlink">Instagram</a>
-            </li>
-            <li>
-              <a href="https://wa.link/um1x6g" class="footerlink">Whatsapp</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <span class="footercopy">@MendezTech 2022</span>
-    </footer>
-
-    <!--FOOTER-->
-    <a href="#" class="scrollup" id="scroll-up">
-      <i class="bx bx-up-arrow-alt scrollupicon"></i>
-    </a>
-
-    <!--JAVASCRIPT-->
-    <script src="js/scrollreveal.min.js"></script>
-
-    <script src="js/swiper-bundle.min.js"></script>
-
-    <script src="js/main.js"></script>
-  </body>
+        <!--=============== SCROLL REVEAL ===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+        
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
